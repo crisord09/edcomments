@@ -8,6 +8,7 @@ import (
 	"github.com/crislord09/edcomments/models"
 )
 
+// Migrate permite crear las tablas en la base de datos
 func Migrate() {
 	db := configuration.GetConnection()
 	defer db.Close()

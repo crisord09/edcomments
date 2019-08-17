@@ -6,6 +6,7 @@ package models
 import jwt "github.com/dgrijalva/jwt-go"
 
 //Claim lo entenderemos como solicitud o reclamo
+// Claim Token del usuario
 type Claim struct {
 	User `json:"user"`
 	jwt.StandardClaims
