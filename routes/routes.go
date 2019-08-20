@@ -11,6 +11,7 @@ func InitRoutes() *mux.Router {
 	//Como estamos dentro de nuestor packete no es necesario importarlo
 	SetLoginRouter(router)
 	SetUserRouter(router)
+	SetCommentRouter(router)
 
 	return router
 
