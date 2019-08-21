@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EDcomments</title>
+</head>
+<body>
+    <form action="/api/login" method="POST" id="form-login">
+        <input type="email" id="email" name="email" placeholder="Email">
+        <input type="password" id="password" name="password" placeholder="Password">
+        <button id="btnLogin">Login</button>
+    </form>
+    <div id="mensaje-login"></div>
+
+    <form action="/api/comments/" method="POST" id="form-comment-add">
+        <textarea id="comment-content" name="comment-content"></textarea>
+        <button id="btnCommentAdd">Comentar</button>
+    </form>
+    <div id="mensaje-comentario"></div>
+
+    <!--====  va a tener la funcionalidad de hacer la peticion via AJAX 👈😉👇  ====-->
+    <script src="js/libreria.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/comments.js"></script>
+</body>
+</html>
